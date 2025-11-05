@@ -1,7 +1,7 @@
 import { Waves, Shield, Heart, Recycle } from 'lucide-react';
 import cascudoLogo from '../assets/Cascudo_LogoMarca_Branco.png';
-import foto17 from '../assets/Foto17.png';
-import oceanoCena from '../assets/Oceano_Cena.png';
+import foto17 from '../assets/Oceano_Cena.png';
+
 import cascudoProduct from '../assets/Cascudo_Prancha_Final_web.png';
 import foto66 from '../assets/Foto66.png';
 
@@ -94,24 +94,15 @@ const CascudoSection = () => {
             </div>
           </div>
 
-          {/* Right Image - Muito Além do Surf */}
-          <h3 className="text-2xl font-bold text-white mb-4 text-center lg:text-left">
-            MUITO ALÉM DO SURF
-          </h3>
-          <div className="relative bg-cover bg-center rounded-2xl shadow-2xl p-4 mt-4" style={{ backgroundImage: `url(${oceanoCena})`, minHeight: '500px' }}>
-            <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
-            <div className="relative z-10 flex flex-col items-center justify-center h-full">
-              <img 
-                src={cascudoProduct} 
-                alt="Cascudo - Produto" 
-                className="w-full max-w-xs h-auto object-contain"
-                loading="eager"
-              />
-              <p className="text-white text-2xl font-bold mt-4 text-center">
-                O FUTURO DO SURF É LIMPO.
-              </p>
-              
-            </div>
+          {/* Right Image - Cascudo na prancha */}
+          <div className="relative">
+            <img 
+              src={foto17} 
+              alt="Cascudo na prancha" 
+              className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-full h-auto"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
         </div>      {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
